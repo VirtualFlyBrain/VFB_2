@@ -1,5 +1,30 @@
 # VFB 2.0 Functional Spec
 
+## TOC:
+
+- [VFB 2.0 Functional Spec](#)
+	- [Search](#)
+	- [Browsing](#)
+		- [Trees](#)
+			- [Tree display specs](#)
+			- [Specs or interaction with trees](#)
+	- [Term Info](#)
+		- [Asserted information](#)
+		- [graphs](#)
+		- [subclasses and parts](#)
+	- [Queries:](#)
+	- [Image browser](#)
+		- [2D](#)
+	- [Social layer](#)
+	- [Pages](#)
+		- [Image browser + term Info:](#)
+			- [Focus selection](#)
+			- [Image browser content selection](#)
+		- [Thumbnails for registered Third party data](#)
+		- [Home/front page](#)
+		- [Results pages](#)
+			- [Anatomical query results page](#)
+
 ## Search
 
 Rapid auto-suggest searching across all(?) content:
