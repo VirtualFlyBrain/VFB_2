@@ -1,5 +1,7 @@
 # VFB 2.0 Technical spec
 
+STATUS: DRAFT
+
 ## Tech overview
 
 ### OWL
