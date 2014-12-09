@@ -6,20 +6,21 @@
 
 Users come to our site with limited information - perhaps a name or abberviation that refers to a neuron class or brain region, or the name of transgene.  There is no guarentee that the name they have is an official one.  They may even come with no names at all, but with an image within which they can point to a region of interest.  Given these starting points, the first aim of the site is allow users to rapidly focus in on a relevant term refering to their object of interest.   There are two main mechanisms for this:
 
-* [Auto-suggest based search](#search).  This needs to work across a broad collection of synonyms, as well as via official names.  It needs to be independent of word order (which users cannot always predict). It needs to be tuned so that exact matches float to the top.  It needs to provide contextual information for hits
+* [Auto-suggest based search](#search).  This needs to work across a broad collection of synonyms, as well as via official names.  It needs to be independent of word order (which users cannot always predict). It needs to be tuned so that exact matches float to the top.  It needs to provide contextual information for hits.
 
 * [Pointing and clicking on regions of images](#)
  
 ### Term Information
 
-Once a focus term has been chosen.  Basic information about that term should be displayed (see [Term Info](#terminfo).   As well as directly
-linked information, it should include some simple inferences.  It should include linked images wherever possible.
+Once a focus term has been chosen.  Basic information about that term should be displayed (see [Term Info](#term_info).   As well as directly linked information, it should include some simple inferences.  It should include linked images wherever possible.
 
 ### Querying
 
 Once users have a relevant focus term, queries allow them to find relevant, biologically related information.
 
 ### Results pages
+
+
 
 ### Refinement
 
@@ -28,11 +29,12 @@ Once users have a relevant focus term, queries allow them to find relevant, biol
 
 Rapid auto-suggest searching across all(?) content:
 
-anatomy
-genetic features
+First priority:
+ - anatomy 
+ - genetic features (neural expressed genes & transgene. Also genes/alleles responsible for neuro phenotypes?)
 
-In future
- - GO terms (for function?)
+In future:
+ - GO terms (for function/phenotypes)
  - behavioral/neural-function phenotype terms
  - chemicals?
  
