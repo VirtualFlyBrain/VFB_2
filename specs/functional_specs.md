@@ -1,5 +1,10 @@
 # VFB 2.0 Functional Spec
 
+STATUS: DRAFT
+
+This document is intended as a description of how the site functions and of (roughly) how it looks. Each section should link to a relevant section in the technical specs doc*, detailing how the site works under the hood.
+(* link as tech\_specs.md#\<subhead in lowercase with underscores>)
+
 ## Overview
 
 ### Starting points: searching and browsing.
