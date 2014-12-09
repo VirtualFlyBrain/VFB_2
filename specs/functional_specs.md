@@ -39,7 +39,7 @@ In future
  Autosuggest will be well tuned ([see spec here](auto_suggest_spec.md)), so that a second results page is not necessary
  Autosuggest will give feedback on hits (definitions; official names (if synonym hit)) to allow users to rapidly assess suggestions for suitablity.
  
-[Search - technical spec]()
+[Search - technical spec](tech_specs.md#search)
  
 ## Browsing
 
