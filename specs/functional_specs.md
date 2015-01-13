@@ -117,6 +117,8 @@ Roughly as now for anatomy,  but add references and move subclasses and parts to
 ### 2D
 Current functionality basically good.  Needs better controls.
 
+### 3D
+
 ## Social layer
 
 ALL CONTENT SHOULD BE SHAREABLE 
