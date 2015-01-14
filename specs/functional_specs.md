@@ -7,12 +7,15 @@ This document is intended as a description of how the site functions and of (rou
 
 ## Overview
 
-### Starting points: searching and browsing.
+### Starting points and browsing.
 
 Users come to our site with limited information - perhaps a name or abberviation that refers to a neuron class or brain region, or the name of transgene.  There is no guarentee that the name they have is an official one.  They may even come with no names at all, but with an image within which they can point to a region of interest.  Given these starting points, the first aim of the site is allow users to rapidly focus in on a relevant term refering to their object of interest.  There are two main mechanisms for this:
 
 * [Auto-suggest based search](#autosuggest_search)
+ * A well tuned, auto-suggest based search 
 * [Pointing and clicking on regions of images](#)
+
+All content pages are potential landing pages, so users should always be able to search and browse from them. Iterative browsing must always be possible: The user must never reach a dead-end page - one with no obvious paths to somewhere else. All pages should have multiple internal links to related content to allow for browsing as well as access to muptiple canned queries and an autosuggest search box.
  
 ### Term Information
 
@@ -40,27 +43,6 @@ Long results lists are inevitable.  Lists will only get longer as we add more da
 * Contextual feedback: Users should get some contexual feedback on their hitlitst. A minimal release must include flagging of synonyms vs official names. Complete functionality should include float-over pop-up window of definition and image thumbnail, if available - and also of official name if hit is to synonym.  Pop ups must work very rapidly or they are likely to be ignored.
 * Potential Future additions to indexed terms: GO term for anat/neural function/phenotype; Behavioral/neural-function phenotype terms
 * [Search - technical spec](tech_specs.md#search)
- 
-### Browsing
-
-The user will be able to browse from one (focus) term to another by:
-  - pointing and clicking on regions in the image browser, or on an adjacent tree. 
-  - Via copious internal links
-
-Iterative browsing must always be possible: The user must never reach a dead-end page - one with no obvious paths to somewhere else relevant to the current focus term.
-
-#### Trees
-  
-#####  Tree display specs
-
-Allow multiple inheritance - reflecting the structure of the underlying ontology.
-display is\_a and part\_of relationships only
-
-
-##### Specs or interaction with trees
-  
-
- 
 
 ### Term Info
 
@@ -102,10 +84,21 @@ Lists have the advantage that tables can show more information about terms than 
 Trees have the advantage of providing a bit more context.  May have to combine parts and subclasses to generate useful trees.
 
 ### Queries:
-
-Roughly as now for anatomy,  but add references and move subclasses and parts to precomputed tabs.
+STUB: Roughly as now for anatomy,  but add references and move subclasses and parts to precomputed tabs.
 
 ### Image browser
+
+### Trees
+
+Question: Do we keep tree browsing for stacks?
+  
+####  Tree display specs
+
+Allow multiple inheritance - reflecting the structure of the underlying ontology.
+display is\_a and part\_of relationships only
+
+
+#### Specs or interaction with trees
 
 #### 2D
 Current functionality basically good.  Needs better controls.
