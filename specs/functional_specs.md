@@ -38,7 +38,7 @@ Long results lists are inevitable.  Lists will only get longer as we add more da
 ### autosuggest search
 
 * Types of objects searched: anatomical structure classes, anatomical structure individuals, transgenes, alleles and genes.  Transgenes, genes and alleles should be limited to those for which we have phenotype or expression data.  Phased release of functionality:  Anatomical structure classes and individuals are the first priority (this part can be used on the olf site).  Transgenes and alleles are priority 2. Work is needed to design pages for these. Genes are priority 3 as there is no direct association between these and annotations, so work on data model is required for this.
-* Search should work across names and synonyms, as well as via official names.  Other associated fields (e.g. definitions) should not be indexed (this decision may be reviewed in future).  
+* Search should work across names, synonyms and ids.  Other associated fields (e.g. definitions) should not be indexed (this decision may be reviewed in future).  
 * Tuning: hits should be independent of word order (which users cannot always predict). Hits to the begining of the name should have a higher priority. Exact matches should have the highest priority.
 * Contextual feedback: Users should get some contexual feedback on their hitlitst. A minimal release must include flagging of synonyms vs official names. Complete functionality should include float-over pop-up window of definition and image thumbnail, if available - and also of official name if hit is to synonym.  Pop ups must work very rapidly or they are likely to be ignored.
 * Potential Future additions to indexed terms: GO term for anat/neural function/phenotype; Behavioral/neural-function phenotype terms
