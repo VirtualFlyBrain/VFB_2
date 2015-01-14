@@ -11,12 +11,7 @@ This document is intended as a description of how the site functions and of (rou
 
 Users come to our site with limited information - perhaps a name or abberviation that refers to a neuron class or brain region, or the name of transgene.  There is no guarentee that the name they have is an official one.  They may even come with no names at all, but with an image within which they can point to a region of interest.  Given these starting points, the first aim of the site is allow users to rapidly focus in on a relevant term refering to their object of interest.   There are two main mechanisms for this:
 
-* [Auto-suggest based search](#search).  
- * Types of objects searched: anatomical structure classes, anatomical structure individuals, transgenes, alleles and genes.  Transgenes, genes and alleles should be limited to those for which we have phenotype or expression data.  Phased release of functionality:  Anatomical structure classes and individuals are the first priority (this part can be used on the olf site).  Transgenes and alleles are priority 2. Work is needed to design pages for these. Genes are priority 3 as there is no direct association between these and annotations, so work on data model is required for this.
- * Search should work across names and synonyms, as well as via official names.  Other associated fields (e.g. definitions) should not be indexed (this decision may be reviewed in future).  
- * Tuning: hits should be independent of word order (which users cannot always predict). Hits to the begining of the name should have a higher priority. Exact matches should have the highest priority.
- * Contextual feedback: Users should get some contexual feedback on their hitlitst. A minimal release must include flagging of synonyms vs official names. Complete functionality should include float-over pop-up window of definition and image thumbnail, if available - and also of official name if hit is to synonym.  Pop ups must work very rapidly or they are likely to be ignored.
- * Potential Future additions to indexed terms: GO term for anat/neural function/phenotype; Behavioral/neural-function phenotype terms
+* [Auto-suggest based search](#autosuggest_search).
  * [Tech specs](tech\_specs.md#autosuggest)
 * [Pointing and clicking on regions of images](#)
  
@@ -35,23 +30,14 @@ Once users have a relevant focus term, queries allow them to find relevant, biol
 ### Refinement
 
 
-## Search
+## autosuggest search
 
-Rapid auto-suggest searching across all(?) content:
-
-First priority:
- - anatomy 
- - genetic features (neural expressed genes & transgene. Also genes/alleles responsible for neuro phenotypes?)
-
-In future:
- - GO terms (for function/phenotypes)
- - behavioral/neural-function phenotype terms
- - chemicals?
- 
- Autosuggest will be well tuned ([see spec here](auto_suggest_spec.md)), so that a second results page is not necessary
- Autosuggest will give feedback on hits (definitions; official names (if synonym hit)) to allow users to rapidly assess suggestions for suitablity.
- 
-[Search - technical spec](tech_specs.md#search)
+* Types of objects searched: anatomical structure classes, anatomical structure individuals, transgenes, alleles and genes.  Transgenes, genes and alleles should be limited to those for which we have phenotype or expression data.  Phased release of functionality:  Anatomical structure classes and individuals are the first priority (this part can be used on the olf site).  Transgenes and alleles are priority 2. Work is needed to design pages for these. Genes are priority 3 as there is no direct association between these and annotations, so work on data model is required for this.
+ * Search should work across names and synonyms, as well as via official names.  Other associated fields (e.g. definitions) should not be indexed (this decision may be reviewed in future).  
+ * Tuning: hits should be independent of word order (which users cannot always predict). Hits to the begining of the name should have a higher priority. Exact matches should have the highest priority.
+ * Contextual feedback: Users should get some contexual feedback on their hitlitst. A minimal release must include flagging of synonyms vs official names. Complete functionality should include float-over pop-up window of definition and image thumbnail, if available - and also of official name if hit is to synonym.  Pop ups must work very rapidly or they are likely to be ignored.
+ * Potential Future additions to indexed terms: GO term for anat/neural function/phenotype; Behavioral/neural-function phenotype terms
+ * [Search - technical spec](tech_specs.md#search)
  
 ## Browsing
 
