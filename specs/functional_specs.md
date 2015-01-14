@@ -105,6 +105,32 @@ Current functionality basically good.  Needs better controls.
 
 #### 3D
 
+##### Content Types
+* Slices of image data (resliced at least on orthogonal axes)
+* Surfaces
+* Neurons
+* Volume-rendered expression patterns (the most challenging)
+  * Could maybe go for the simplest, low resolution version (Maximum Intensity Projection) initially
+
+##### Interaction
+* Scene rotation using virtual trackball (around centre of current objects?)
+* Zoom (using mouse wheel)
+* Ideally panning (using some key+drag combo)
+* Hover or click should be able to reveal basic information about an object (just the top object in line of sight)
+* Ideally selection (positive and shift-drag for negative) to select multiple displayed items
+  * selection should be reflected in a check box in object list
+
+##### Object list
+* presently selected objects should be listed in a **table** or **tree hierarchy** synchronised with display
+* should have (separate?) check boxes for selection and display
+* should include basic info + click through to detail page
+* should be sortable by 
+  * name
+  * content type
+  * time added to scene
+  amongst other columns
+
+
 ### Social layer
 
 ALL CONTENT SHOULD BE SHAREABLE 
