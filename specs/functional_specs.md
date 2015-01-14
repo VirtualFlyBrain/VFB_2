@@ -11,7 +11,12 @@ This document is intended as a description of how the site functions and of (rou
 
 Users come to our site with limited information - perhaps a name or abberviation that refers to a neuron class or brain region, or the name of transgene.  There is no guarentee that the name they have is an official one.  They may even come with no names at all, but with an image within which they can point to a region of interest.  Given these starting points, the first aim of the site is allow users to rapidly focus in on a relevant term refering to their object of interest.   There are two main mechanisms for this:
 
-* [Auto-suggest based search](#search).  This needs to work across a broad collection of synonyms, as well as via official names.  It needs to be independent of word order (which users cannot always predict). It needs to be tuned so that exact matches float to the top.  It needs to provide contextual information for hits.
+* [Auto-suggest based search](#search).  
+ * Types of objects searched: anatomical structure classes, anatomical structure individuals, transgenes, alleles and genes.  Transgenes\*, genes\* and alleles\* should be limited to those for which we have phenotype or expression data.  Phased release of functionality:  Anatomical structure classes and individuals are the first priority (this part can be used on the olf site).  Transgenes and alleles are priority 2. Work is needed to design pages for these. Genes are priority 3 as there is no direct association between these and annotations, so work on data model is required for this.
+ * Search should work across names and synonyms, as well as via official names.  Other associated fields (e.g. definitions) should not be indexed (this decision may be reviewed in future).  
+ * Tuning: hits should be independent of word order (which users cannot always predict). Hits to the begining of the name should have a higher priority. Exact matches should have the highest priority.
+ * Contextual feedback: Users should get some contexual feedback on their hitlitst. A minimal release must include flagging of synonyms vs official names. Complete functionality should include float-over pop-up windon of definition and image if available - and also of official name if hit is to synonym.  Pop up must work very rapidly or they are likely to be ignored.
+
 
 * [Pointing and clicking on regions of images](#)
  
