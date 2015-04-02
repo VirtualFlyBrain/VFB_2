@@ -151,6 +151,7 @@ Shows all currenly displayed items. This will consist of colour key with titles 
 * template, 
 * anatomy, 
 * individuals.
+
 Each title when clicked will open full details in the large data display window.
 
 The key colours will provided from a standard colour list in selection order (enables some user choice through order) with an option to change the used list in this window.
@@ -160,6 +161,7 @@ Discussion: providing a fix list resolves many issues but we should provide a fe
 #### Specs or interaction with trees
 
 #### 2D
+
 Current functionality basically good.  Needs better controls.
 
 #### 3D
