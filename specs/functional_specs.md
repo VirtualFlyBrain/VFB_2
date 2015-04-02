@@ -90,7 +90,7 @@ STUB: Roughly as now for anatomy,  but add references and move subclasses and pa
 
 Would ideally consist of a single viewer providing a 3D context view as the main window with subwindows overlayed providing metadata as well as an intergrated slice viewer.
 
-The subwindows will consist of a large data display window (most likely at the bottom of the screen) to display detailed descriptions or results. Smaller subwindows would consist of:
+The subwindows will consist of a large data display window (most likely at the bottom of the screen if not outside viewer confines - to be discussed) to display detailed descriptions or results. Smaller subwindows would consist of:
 * 2D slice viewer,
 * Selected point/area results window (maybe use large data window for this?),
 * Currently displayed,
@@ -114,13 +114,13 @@ Note:The initial suggestion for the 3D marker is three 2D (but solid with a mini
 
 The point of interst should be manually selectable on either the 3D of 2D views and be maintained in sync (moving the slice view if nessasary). In addition adjusting the x,y or z controls will update the point of interest and views accordingly.
 
-##### Selected
+##### Selected area/point
 a separate subwindow will show all data available for the selecte point of interest this will consist of:
 * any anatomy at this position,
 * any expression pattern / neuron individuals with thresholded expression at this point.
 Although anatomy data should be relatively limited the individuals maybe numourus (if not now then soon) so will require a nested view / tree or some sort to make results easier to interpret.
 
-Discussion: The point of interest could be a single voxel, a voxel with a fixed radius or of user variable size?  
+Discussion: The point of interest could be a single voxel, a voxel with a fixed radius or of user variable size? Is 2D or 3D area selection practicle or useful in a 3D volume?
 
 #### 2D Slice viewer
 
@@ -130,8 +130,9 @@ Ideally when the mouse is over the slice viewer the mouse scroll should adjust t
 The viewer will display the same objects as with the 3D browser and colours must be consistent. 
 Selection of a point on the slice viewer should update the pint of interest in all views and the selected results window.
 
+Discussion:  I suggest limiting to fixed plane views (frontal/saggittal/tranverse) to simplify the calculations as most users barely move beyond the standard frontal plane. It would also be nice to enable multiple slice views to be opened enabling multiple syncronised planes to be viewed simultanously. This could be managed on the 3D main window by differing line styled frames. 
   
-####  Anatomy
+#### Anatomy
 
 Allow multiple inheritance - reflecting the structure of the underlying ontology.
 display is\_a and part\_of relationships only
@@ -144,9 +145,17 @@ clicking on any anatomy title should display the full record in the large data d
 
 Discussion: Do we have a standard anatomy tree covering all anatomy or just that available in the currently displayed template or several sub trees defined by stage / area on display?
 
+#### Currently Displayed 
 
+Shows all currenly displayed items. This will consist of colour key with titles including:
+* template, 
+* anatomy, 
+* individuals.
+Each title when clicked will open full details in the large data display window.
 
+The key colours will provided from a standard colour list in selection order (enables some user choice through order) with an option to change the used list in this window.
 
+Discussion: providing a fix list resolves many issues but we should provide a few colour options to enable for prefernce and colour blindness etc. Lab spaced as well as standard plot (matlab, etc.) standard colours (jet, hot, hsv, etc.) are available but we do need a colour blindness appropriate option (needs investigation). 
 
 #### Specs or interaction with trees
 
