@@ -88,14 +88,64 @@ STUB: Roughly as now for anatomy,  but add references and move subclasses and pa
 
 ### Image browser
 
-### Trees
+Would ideally consist of a single viewer providing a 3D context view as the main window with subwindows overlayed providing metadata as well as an intergrated slice viewer.
 
-Question: Do we keep tree browsing for stacks?
+The subwindows will consist of a large data display window (most likely at the bottom of the screen) to display detailed descriptions or results. Smaller subwindows would consist of:
+* 2D slice viewer,
+* Selected point/area results window (maybe use large data window for this?),
+* Currently displayed,
+* Anatomy,
+* Free search.
+
+#### 3D main window
+
+The main 3D view should provide a surface 'glass' rendered background with selected objects viable inside:
+* Anatomy should appear as solid surface rendered objects with the option to adjust transparency if required.
+* Expression data should aim to be be rendered as particles rather than attempting to give it an atificial surface - This will need to be investigated further dependant on trials.
+* Neurons could be handled as either anatomy or expression dependant on the quality of the data and discussin based on trials.
+
+Within the 3D view a vitual frame will indicate the current slice being shown in the 2D slice viewer (see below).
+
+#### Point of interest
+
+There will be a rendered marker indicating the current selected point - this is also the XYZ central point for navigation purposes. 
+
+Note:The initial suggestion for the 3D marker is three 2D (but solid with a minimal 3D volume) circles on the 3 planes appearing as a circle with a cross from the major planes. This would be shown a a circle only on the slice viewer to avoid obscuring the actual point of interest.
+
+The point of interst should be manually selectable on either the 3D of 2D views and be maintained in sync (moving the slice view if nessasary). In addition adjusting the x,y or z controls will update the point of interest and views accordingly.
+
+##### Selected
+a separate subwindow will show all data available for the selecte point of interest this will consist of:
+* any anatomy at this position,
+* any expression pattern / neuron individuals with thresholded expression at this point.
+Although anatomy data should be relatively limited the individuals maybe numourus (if not now then soon) so will require a nested view / tree or some sort to make results easier to interpret.
+
+Discussion: The point of interest could be a single voxel, a voxel with a fixed radius or of user variable size?  
+
+#### 2D Slice viewer
+
+This will be a subwindow which can be varied in size control of which is provided by the main windows (3D viewers) controls.
+The only control in this window will be a vertical distance slider should be provided at one side to allow the user to scroll in depth without adjusting the point of interest. 
+Ideally when the mouse is over the slice viewer the mouse scroll should adjust the distance for more familiar navigation. 
+The viewer will display the same objects as with the 3D browser and colours must be consistent. 
+Selection of a point on the slice viewer should update the pint of interest in all views and the selected results window.
+
   
-####  Tree display specs
+####  Anatomy
 
 Allow multiple inheritance - reflecting the structure of the underlying ontology.
 display is\_a and part\_of relationships only
+
+Any term that is available in the current template should have a selection box and the corresponding ticked colour background if selected. 
+
+Discussion: should we offer a link if available in another template?
+
+clicking on any anatomy title should display the full record in the large data display window.
+
+Discussion: Do we have a standard anatomy tree covering all anatomy or just that available in the currently displayed template or several sub trees defined by stage / area on display?
+
+
+
 
 
 #### Specs or interaction with trees
