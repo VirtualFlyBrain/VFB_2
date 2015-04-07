@@ -100,6 +100,7 @@ The sub-windows will consist of a large data display window (most likely at the 
 #### 3D main window
 
 The main 3D view should provide a surface 'glass' rendered background with selected objects viable inside:
+* multiple (unlimited within reason) items must be able to be overlayed.
 * Anatomy should appear as solid surface rendered objects with the option to adjust transparency if required.
 * Expression data should aim to be rendered as particles rather than attempting to give it an artificial surface - This will need to be investigated further dependent on trials.
 * Neurons could be handled as either anatomy or expression dependent on the quality of the data and discussion based on trials.
