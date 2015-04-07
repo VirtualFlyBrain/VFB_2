@@ -106,6 +106,14 @@ The main 3D view should provide a surface 'glass' rendered background with selec
 
 Within the 3D view a virtual frame will indicate the current slice being shown in the 2D slice viewer (see below).
 
+#### Interaction
+* Scene rotation using virtual trackball (around centre of current objects?)
+* Zoom (using mouse wheel)
+* Ideally panning (using some key+drag combo)
+* Hover or click should be able to reveal basic information about an object (just the top object in line of sight)
+* Ideally selection (positive and shift-drag for negative) to select multiple displayed items
+  * selection should be reflected in a check box in object list
+
 #### Point of interest
 
 There will be a rendered marker indicating the current selected point - this is also the XYZ central point for navigation purposes. 
@@ -154,43 +162,17 @@ Shows all currently displayed items. This will consist of colour key with titles
 
 Each title when clicked will open full details in the large data display window.
 
-The key colours will provided from a standard colour list in selection order (enables some user choice through order) with an option to change the used list in this window.
-
-Discussion: providing a fix list resolves many issues but we should provide a few colour options to enable for preference and colour blindness etc. Lab spaced as well as standard plot (matlab, etc.) standard colours (jet, hot, hsv, etc.) are available but we do need a colour blindness appropriate option (needs investigation). 
-
-#### Specs or interaction with trees
-
-#### 2D
-
-Current functionality basically good.  Needs better controls.
-
-#### 3D
-
-##### Content Types
-* Slices of image data (resliced at least on orthogonal axes)
-* Surfaces
-* Neurons
-* Volume-rendered expression patterns (the most challenging)
-  * Could maybe go for the simplest, low resolution version (Maximum Intensity Projection) initially
-
-##### Interaction
-* Scene rotation using virtual trackball (around centre of current objects?)
-* Zoom (using mouse wheel)
-* Ideally panning (using some key+drag combo)
-* Hover or click should be able to reveal basic information about an object (just the top object in line of sight)
-* Ideally selection (positive and shift-drag for negative) to select multiple displayed items
-  * selection should be reflected in a check box in object list
-
-##### Object list
-* presently selected objects should be listed in a **table** or **tree hierarchy** synchronised with display
-* should have (separate?) check boxes for selection and display
-* should include basic info + click through to detail page
 * should be sortable by 
   * name
   * content type
   * time added to scene
   amongst other columns
 
+The key colours will provided from a standard colour list in selection order (enables some user choice through order) with an option to change the used list in this window.
+
+Discussion: providing a fixed colour list resolves many issues but we should provide a few colour options to enable for preference and colour blindness etc. Lab spaced as well as standard plot (matlab, etc.) standard colours (jet, hot, hsv, etc.) are available but we do need a colour blindness appropriate option (needs investigation). 
+
+Discussion: should we handle selection as separate from displayed and have separate list/checkboxes (can more than one item be selected without adding to display)?
 
 ### Social layer
 
@@ -199,7 +181,7 @@ ALL CONTENT SHOULD BE SHAREABLE
 - Dynamically generated content must be reachable via a unique URL
 - If URL does not change during browsing, Provide permalinks.
 
-Vote and comment on content.
+Discussion: Vote and comment on content. How can we handle this and what do we want it to acheve?
 
 ## Pages
 
