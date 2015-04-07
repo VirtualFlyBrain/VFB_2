@@ -175,6 +175,13 @@ Discussion: providing a fixed colour list resolves many issues but we should pro
 
 Discussion: should we handle selection as separate from displayed and have separate list/checkboxes (can more than one item be selected without adding to display)?
 
+### Search box
+There should be an open search box that enables a complete (with autosuggest) search to be conducted for any data available on the site.
+
+The autosuggest can either utilise a pop-up or the large data display window with options to reduce the number or define the specific item being searched for.
+
+The results should utilise the large data display window.
+
 ### Social layer
 
 ALL CONTENT SHOULD BE SHAREABLE 
