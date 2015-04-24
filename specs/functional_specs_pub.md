@@ -17,12 +17,9 @@
 6.3\.  [Point of interest](#pointofinterest)  
 6.3.1\.  [Selected area/point](#selectedarea/point)  
 6.4\.  [2D Slice viewer](#2dsliceviewer)  
-6.5\.  [Anatomy](#anatomy)  
+6.5\.  [Anatomy tree](#anatomytree)  
 6.6\.  [Currently Displayed](#currentlydisplayed)  
 7\.  [Social layer](#sociallayer)  
-7.1\.  [Home/front page](#home/frontpage)  
-7.2\.  [Results pages](#resultspages-1)  
-7.2.1\.  [Anatomical query results page](#anatomicalqueryresultspage)  
 
 STATUS: DRAFT
 
@@ -260,9 +257,9 @@ Selection of a point on the slice viewer should update the pint of interest in a
 
 Discussion:  I suggest limiting to fixed plane views (frontal/sagittal/transverse) to simplify the calculations as most users barely move beyond the standard frontal plane. It would also be nice to enable multiple slice views to be opened enabling multiple syncronised planes to be viewed simultaneously. This could be managed on the 3D main window by differing line styled frames. 
   
-<a name="anatomy"></a>
+<a name="anatomytree"></a>
 
-### 6.5\. Anatomy
+### 6.5\. Anatomy tree
 
 Allow multiple inheritance - reflecting the structure of the underlying ontology.
 display is\_a and part\_of relationships only
@@ -311,25 +308,4 @@ ALL CONTENT SHOULD BE SHAREABLE
 Discussion: Vote and comment on content. How can we handle this and what do we want it to acheve?
 
 
-
-
-
-<a name="home/frontpage"></a>
-
-### 7.1\. Home/front page
-
-To decide:
-  - Do we need a front page?  
-  - Or would it be better to have a modified form of the image browsing/term info page with something pretty in the image browser panel? 
-  
-<a name="resultspages-1"></a>
-
-### 7.2\. Results pages 
-
- 
-<a name="anatomicalqueryresultspage"></a>
-
-#### 7.2.1\. Anatomical query results page
-
-Include example images
 

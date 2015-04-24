@@ -204,7 +204,7 @@ Selection of a point on the slice viewer should update the pint of interest in a
 
 Discussion:  I suggest limiting to fixed plane views (frontal/sagittal/transverse) to simplify the calculations as most users barely move beyond the standard frontal plane. It would also be nice to enable multiple slice views to be opened enabling multiple syncronised planes to be viewed simultaneously. This could be managed on the 3D main window by differing line styled frames. 
   
-### Anatomy
+### Anatomy tree
 
 Allow multiple inheritance - reflecting the structure of the underlying ontology.
 display is\_a and part\_of relationships only
@@ -249,19 +249,4 @@ ALL CONTENT SHOULD BE SHAREABLE
 Discussion: Vote and comment on content. How can we handle this and what do we want it to acheve?
 
 
-
-
-
-### Home/front page
-
-To decide:
-  - Do we need a front page?  
-  - Or would it be better to have a modified form of the image browsing/term info page with something pretty in the image browser panel? 
-  
-### Results pages 
-
- 
-#### Anatomical query results page
-
-Include example images
 
