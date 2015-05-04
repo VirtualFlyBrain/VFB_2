@@ -7,13 +7,7 @@ STATUS: DRAFT
 This document is intended as a description of how the site functions and of (roughly) how it looks. Each section should link to a relevant section in the technical specs doc\*, detailing how the site works under the hood.
 (* link as tech\_specs.md#\<subhead in lowercase with underscores>)
 
-## Pages
-
-TBD: 
-
-* Do we need a home page?  Or just a default version of the main browser page?
-** Could image browser pattern be re-used to allow users to choose a gross nervous system region in default view?
-* Should we keep a separate querybuilder as now, or try to fold into query/query refinement system.  If keeping, can we come up with a better name?
+## Page components
 
 ### Header
 
@@ -21,12 +15,13 @@ Present on all pages.  Includes:
 
 * Logo & link to home - Top left
 * Name of current focus term (Also title of page)
-* Search box.  Typically this would live on the top right, but this may not => enough space for autocomplete search.
+* Search box.  Typically this would live on the top right, but this
+may not => enough space for autocomplete search. Try in centre?
 * Contact, About and Help links
 
 ### Thumbnails
 
-Thumbnails will appear in many places on the site.  Where they do, they must follow a consistent grammar.  i.e. the following should be arranged in the same way wherever they are found:
+Thumbnails will appear in many places on the site.  Where they do, they __must__ follow a consistent grammar.  i.e. the following should be arranged in the same way wherever they are found:
 
 * Name
 * Link to source (use general one if no link specific to data is available)
@@ -41,9 +36,17 @@ Thumbnails will appear in many places on the site.  Where they do, they must fol
 * about
 * help
 
+## Pages
+
+TBD: 
+
+* Do we need a home page?  Or just a default version of the main browser page?
+ * Could image browser pattern be re-used to allow users to choose a gross nervous system region in default view?
+* Should we keep a separate querybuilder as now, or try to fold into query/query refinement system.  If keeping, can we come up with a better name?
+
 ### Standard content page
 
-Standard content pages will not be fixed length - they will be long enough for the content that needs to be displayed.
+Standard content pages _will not be fixed length_ - they will be long enough for the content that needs to be displayed.
 
 Components:
 
@@ -71,12 +74,19 @@ Should retain standard header with search box.
 
 Results in table form, with standard (selectable) number displayed per page.
 
-All results should show:  the reason for a hit; a link to a reference or dataset; a representative image where available.
+All results should show: the reason for a hit; a link to a reference or dataset; a representative image where available.
 
-All results should be sortable, refinable. 
+All results should be sortable, refinable.
 
+#### Anatomy query results page
 
-## Starting points, seaching and browsing.
+TBA
+
+#### Image query results page
+
+TBA
+
+## Starting points, searching and browsing.
 
 All content pages are potential landing pages, so users should always be able to search and browse from them. Iterative browsing must always be possible: The user must never reach a dead-end page - one with no obvious paths to somewhere else. All pages should have multiple internal links to related content to allow for browsing as well as access to mutiple canned queries and an autosuggest search box.  At any one time, a page displays information about a single focus term. 
 
@@ -100,13 +110,16 @@ TBD: Should we also have a secondary results page allowing refinement, or just r
 ## Term Information and query menus
 
 Information about a term.  A term may be 
- - a class 
-   - (of cells, anatomy, genetic feature(?))
+ - a class of
+   - cell, 
+   - anatomical structure
+   - FlyBase genetic feature (?)
+   
  - an individual
    - anatomical structure
+   - neuron cluster (?)
 
 Once a focus term has been chosen, term information about that term should be displayed along with query menus relevant to the term.   Linked images illustrating the class or individual  should be shown wherever possible. Users do not necessarily know what types of information are available as a result of inference/queries, so, as well as directly linked information, term info should include some simple inferences and visualisations.
-
 
 __Asserted information__
 
@@ -117,10 +130,9 @@ __Asserted information__
 * synonyms
 * relationships  (objects hyperlinked)
 
-
 __visualisations (graphs)__
 
-All graphs should be clickable, and answer a specific question:
+Graphs should be displayed in tabs using labelling as below. All graphs should be clickable, and answer a specific question:
 
 In tabs:
    - What is it? 
@@ -134,20 +146,45 @@ In tabs:
 
 __subclasses and parts__
 
-Multiple tabs (below other term info?)
+Subclasses and parts of anatomical structures should be displayed in tabs, rather than users needing to query for them.
 
-To decide: Lists or trees?
-Lists have the advantage that tables can show more information about terms than trees.  They could even be identical to anatomy search results pages.
-Trees have the advantage of providing a bit more context.  May have to combine parts and subclasses to generate useful trees.
+TBD: Lists or trees?
+* Lists have the advantage that tables can show more information about terms than trees and can potentially be sorted o refined.  They could even be identical to anatomy search results pages.
+* Trees are harder to generate, but have the advantage of providing a bit more context.  They are also better suited to browsing.  May have to combine parts and subclasses to generate useful trees.
 
 
 ## Querying
 
-Once users have a relevant focus term, queries allow them to find relevant, biologically related information.
+Once users have a relevant focus term, queries allow them to find relevant, biologically related information. 
 
-DETAILS TBA
+For reference: [VFB1 queries](https://github.com/VirtualFlyBrain/VFB/wiki/Queries)
 
-Roughly as now for anatomy, but add references and move subclasses and parts to precomputed tabs.
+* Queries from all anatomical classes
+ * genes expressed in X
+ * transgenes expressed in X
+ * phenotypes in X
+
+* Queries from neuropils
+ * neurons with some part in X
+  * neurons with synaptic terminals in X
+   * neurons with presynaptic terminals in X
+   * neurons with postsynaptic terminals in X
+
+* Queries from tracts/nerves
+   * fasciculates with X
+
+* Queries from lineage clones
+  * Component neuron  
+
+* Queries from clusters
+   TBD: Do we want cluster page
+
+* Queries from Genetic Features
+   * Anatomical structures expressed in (or should this just be displayed?)
+     * Neurons expressed in? 
+   * Associated neural phenotypes (or just display?)
+
+
 
 ## Image browser
 
@@ -247,6 +284,8 @@ ALL CONTENT SHOULD BE SHAREABLE
 - If URL does not change during browsing, Provide permalinks.
 
 Discussion: Vote and comment on content. How can we handle this and what do we want it to acheve?
+
+Discussion: Albert Cardona collected together a few potentially useful [resources ocrowd-sourcing](https://github.com/acardona/CATMAID/wiki/Crowd-sourcing).
 
 
 
