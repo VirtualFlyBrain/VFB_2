@@ -19,8 +19,8 @@ TBD:
 
 Present on all pages.  Includes:
 
-* Logo & link to home - Top left = l
-* Name of current focus term.
+* Logo & link to home - Top left
+* Name of current focus term (Also title of page)
 * Search box.  Typically this would live on the top right, but this may not => enough space for autocomplete search.
 * Contact, About and Help links
 
