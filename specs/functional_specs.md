@@ -73,10 +73,17 @@ Should retain standard header with search box.
 
 Results in table form, with standard (selectable) number displayed per page.
 
-All results should show:  the reason for a hit; a link to a reference or dataset; a representative image where available.
+All results should show: the reason for a hit; a link to a reference or dataset; a representative image where available.
 
-All results should be sortable, refinable. 
+All results should be sortable, refinable.
 
+#### Anatomy query results page
+
+TBA
+
+#### Image query results page
+
+TBA
 
 ## Starting points, searching and browsing.
 
@@ -109,7 +116,6 @@ Information about a term.  A term may be
 
 Once a focus term has been chosen, term information about that term should be displayed along with query menus relevant to the term.   Linked images illustrating the class or individual  should be shown wherever possible. Users do not necessarily know what types of information are available as a result of inference/queries, so, as well as directly linked information, term info should include some simple inferences and visualisations.
 
-
 __Asserted information__
 
 * name
@@ -119,10 +125,9 @@ __Asserted information__
 * synonyms
 * relationships  (objects hyperlinked)
 
-
 __visualisations (graphs)__
 
-All graphs should be clickable, and answer a specific question:
+Graphs should be displayed in tabs using labelling as below. All graphs should be clickable, and answer a specific question:
 
 In tabs:
    - What is it? 
@@ -136,16 +141,38 @@ In tabs:
 
 __subclasses and parts__
 
-Multiple tabs (below other term info?)
+Subclasses and parts of anatomical structures should be displayed in tabs, rather than users needing to query for them.
 
-To decide: Lists or trees?
-Lists have the advantage that tables can show more information about terms than trees.  They could even be identical to anatomy search results pages.
-Trees have the advantage of providing a bit more context.  May have to combine parts and subclasses to generate useful trees.
+TBD: Lists or trees?
+* Lists have the advantage that tables can show more information about terms than trees and can potentially be sorted o refined.  They could even be identical to anatomy search results pages.
+* Trees are harder to generate, but have the advantage of providing a bit more context.  They are also better suited to browsing.  May have to combine parts and subclasses to generate useful trees.
 
 
 ## Querying
 
-Once users have a relevant focus term, queries allow them to find relevant, biologically related information.
+Once users have a relevant focus term, queries allow them to find relevant, biologically related information. 
+
+* Queries from all anatomical classes
+ * genes expressed in X
+ * transgenes expressed in X
+ * phenotypes in X
+
+* Queries from neuropils
+ * neurons with some part in X
+  * neurons with synaptic terminals in X
+   * neurons with presynaptic terminals in X
+   * neurons with postsynaptic terminals in X
+
+* Queries from tracts/nerves
+   * fasciculates with X
+
+* Queries from lineage clones
+  * Component neuron  
+
+* Queries from clusters
+   TBD: Do we want cluster page
+
+https://github.com/VirtualFlyBrain/VFB/wiki/Queries
 
 DETAILS TBA
 
@@ -250,5 +277,7 @@ ALL CONTENT SHOULD BE SHAREABLE
 
 Discussion: Vote and comment on content. How can we handle this and what do we want it to acheve?
 
-Discussion: Albert Cardona collected together a few [resources on crowd-sourcing](https://github.com/acardona/CATMAID/wiki/Crowd-sourcing) that I found interesting.
+Discussion: Albert Cardona collected together a few potentially useful [resources ocrowd-sourcing](https://github.com/acardona/CATMAID/wiki/Crowd-sourcing).
+
+
 
