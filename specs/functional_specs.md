@@ -12,7 +12,7 @@ This document is intended as a description of how the site functions and of (rou
 TBD: 
 
 * Do we need a home page?  Or just a default version of the main browser page?
-** Could image browser pattern be re-used to allow users to choose a gross nervous system region in default view?
+ * Could image browser pattern be re-used to allow users to choose a gross nervous system region in default view?
 * Should we keep a separate querybuilder as now, or try to fold into query/query refinement system.  If keeping, can we come up with a better name?
 
 ### Header
