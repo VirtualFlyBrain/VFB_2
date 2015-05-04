@@ -7,13 +7,7 @@ STATUS: DRAFT
 This document is intended as a description of how the site functions and of (roughly) how it looks. Each section should link to a relevant section in the technical specs doc\*, detailing how the site works under the hood.
 (* link as tech\_specs.md#\<subhead in lowercase with underscores>)
 
-## Pages
-
-TBD: 
-
-* Do we need a home page?  Or just a default version of the main browser page?
- * Could image browser pattern be re-used to allow users to choose a gross nervous system region in default view?
-* Should we keep a separate querybuilder as now, or try to fold into query/query refinement system.  If keeping, can we come up with a better name?
+## Page components
 
 ### Header
 
@@ -40,6 +34,14 @@ Thumbnails will appear in many places on the site.  Where they do, they must fol
 * contact
 * about
 * help
+
+## Pages
+
+TBD: 
+
+* Do we need a home page?  Or just a default version of the main browser page?
+ * Could image browser pattern be re-used to allow users to choose a gross nervous system region in default view?
+* Should we keep a separate querybuilder as now, or try to fold into query/query refinement system.  If keeping, can we come up with a better name?
 
 ### Standard content page
 
@@ -76,7 +78,7 @@ All results should show:  the reason for a hit; a link to a reference or dataset
 All results should be sortable, refinable. 
 
 
-## Starting points, seaching and browsing.
+## Starting points, searching and browsing.
 
 All content pages are potential landing pages, so users should always be able to search and browse from them. Iterative browsing must always be possible: The user must never reach a dead-end page - one with no obvious paths to somewhere else. All pages should have multiple internal links to related content to allow for browsing as well as access to mutiple canned queries and an autosuggest search box.  At any one time, a page displays information about a single focus term. 
 
