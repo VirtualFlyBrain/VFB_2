@@ -250,5 +250,5 @@ ALL CONTENT SHOULD BE SHAREABLE
 
 Discussion: Vote and comment on content. How can we handle this and what do we want it to acheve?
 
-
+Discussion: Albert Cardona collected together a few [resources on crowd-sourcing](https://github.com/acardona/CATMAID/wiki/Crowd-sourcing) that I found interesting.
 
