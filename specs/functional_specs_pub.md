@@ -1,40 +1,37 @@
 # VFB 2.0 Functional Spec
 
-1\.  [Pages](#pages)  
+1\.  [Page components](#pagecomponents)  
 1.1\.  [Header](#header)  
 1.2\.  [Thumbnails](#thumbnails)  
 1.3\.  [Footer](#footer)  
-1.4\.  [Standard content page](#standardcontentpage)  
-1.4.1\.  [Focus selection in standard content page](#focusselectioninstandardcontentpage)  
-1.5\.  [Results pages](#resultspages)  
-2\.  [Starting points, seaching and browsing.](#startingpointsseachingandbrowsing.)  
-3\.  [Autosuggest search](#autosuggestsearch)  
-4\.  [Term Information and query menus](#terminformationandquerymenus)  
-5\.  [Querying](#querying)  
-6\.  [Image browser](#imagebrowser)  
-6.1\.  [3D main window](#3dmainwindow)  
-6.2\.  [Interaction](#interaction)  
-6.3\.  [Point of interest](#pointofinterest)  
-6.3.1\.  [Selected area/point](#selectedarea/point)  
-6.4\.  [2D Slice viewer](#2dsliceviewer)  
-6.5\.  [Anatomy tree](#anatomytree)  
-6.6\.  [Currently Displayed](#currentlydisplayed)  
-7\.  [Social layer](#sociallayer)  
+2\.  [Pages](#pages)  
+2.1\.  [Standard content page](#standardcontentpage)  
+2.1.1\.  [Focus selection in standard content page](#focusselectioninstandardcontentpage)  
+2.2\.  [Results pages](#resultspages)  
+2.2.1\.  [Anatomy query results page](#anatomyqueryresultspage)  
+2.2.2\.  [Image query results page](#imagequeryresultspage)  
+3\.  [Starting points, searching and browsing.](#startingpointssearchingandbrowsing.)  
+4\.  [Autosuggest search](#autosuggestsearch)  
+5\.  [Term Information and query menus](#terminformationandquerymenus)  
+6\.  [Querying](#querying)  
+7\.  [Image browser](#imagebrowser)  
+7.1\.  [3D main window](#3dmainwindow)  
+7.2\.  [Interaction](#interaction)  
+7.3\.  [Point of interest](#pointofinterest)  
+7.3.1\.  [Selected area/point](#selectedarea/point)  
+7.4\.  [2D Slice viewer](#2dsliceviewer)  
+7.5\.  [Anatomy tree](#anatomytree)  
+7.6\.  [Currently Displayed](#currentlydisplayed)  
+8\.  [Social layer](#sociallayer)  
 
 STATUS: DRAFT
 
 This document is intended as a description of how the site functions and of (roughly) how it looks. Each section should link to a relevant section in the technical specs doc\*, detailing how the site works under the hood.
 (* link as tech\_specs.md#\<subhead in lowercase with underscores>)
 
-<a name="pages"></a>
+<a name="pagecomponents"></a>
 
-## 1\. Pages
-
-TBD: 
-
-* Do we need a home page?  Or just a default version of the main browser page?
-** Could image browser pattern be re-used to allow users to choose a gross nervous system region in default view?
-* Should we keep a separate querybuilder as now, or try to fold into query/query refinement system.  If keeping, can we come up with a better name?
+## 1\. Page components
 
 <a name="header"></a>
 
@@ -42,16 +39,17 @@ TBD:
 
 Present on all pages.  Includes:
 
-* Logo & link to home - Top left = l
-* Name of current focus term.
-* Search box.  Typically this would live on the top right, but this may not => enough space for autocomplete search.
+* Logo & link to home - Top left
+* Name of current focus term (Also title of page)
+* Search box.  Typically this would live on the top right, but this
+may not => enough space for autocomplete search. Try in centre?
 * Contact, About and Help links
 
 <a name="thumbnails"></a>
 
 ### 1.2\. Thumbnails
 
-Thumbnails will appear in many places on the site.  Where they do, they must follow a consistent grammar.  i.e. the following should be arranged in the same way wherever they are found:
+Thumbnails will appear in many places on the site.  Where they do, they __must__ follow a consistent grammar.  i.e. the following should be arranged in the same way wherever they are found:
 
 * Name
 * Link to source (use general one if no link specific to data is available)
@@ -68,11 +66,21 @@ Thumbnails will appear in many places on the site.  Where they do, they must fol
 * about
 * help
 
+<a name="pages"></a>
+
+## 2\. Pages
+
+TBD: 
+
+* Do we need a home page?  Or just a default version of the main browser page?
+ * Could image browser pattern be re-used to allow users to choose a gross nervous system region in default view?
+* Should we keep a separate querybuilder as now, or try to fold into query/query refinement system.  If keeping, can we come up with a better name?
+
 <a name="standardcontentpage"></a>
 
-### 1.4\. Standard content page
+### 2.1\. Standard content page
 
-Standard content pages will not be fixed length - they will be long enough for the content that needs to be displayed.
+Standard content pages _will not be fixed length_ - they will be long enough for the content that needs to be displayed.
 
 Components:
 
@@ -82,7 +90,7 @@ Components:
 
 <a name="focusselectioninstandardcontentpage"></a>
 
-#### 1.4.1\. Focus selection in standard content page
+#### 2.1.1\. Focus selection in standard content page
 
 At any one time, the TermInfo has a single focus -an ontology term, a genetic feature.  
 
@@ -98,20 +106,31 @@ Focus is independent of what is displayed in image browser, but can be synced wi
 
 <a name="resultspages"></a>
 
-### 1.5\. Results pages
+### 2.2\. Results pages
 
 Should retain standard header with search box.
 
 Results in table form, with standard (selectable) number displayed per page.
 
-All results should show:  the reason for a hit; a link to a reference or dataset; a representative image where available.
+All results should show: the reason for a hit; a link to a reference or dataset; a representative image where available.
 
-All results should be sortable, refinable. 
+All results should be sortable, refinable.
 
+<a name="anatomyqueryresultspage"></a>
 
-<a name="startingpointsseachingandbrowsing."></a>
+#### 2.2.1\. Anatomy query results page
 
-## 2\. Starting points, seaching and browsing.
+TBA
+
+<a name="imagequeryresultspage"></a>
+
+#### 2.2.2\. Image query results page
+
+TBA
+
+<a name="startingpointssearchingandbrowsing."></a>
+
+## 3\. Starting points, searching and browsing.
 
 All content pages are potential landing pages, so users should always be able to search and browse from them. Iterative browsing must always be possible: The user must never reach a dead-end page - one with no obvious paths to somewhere else. All pages should have multiple internal links to related content to allow for browsing as well as access to mutiple canned queries and an autosuggest search box.  At any one time, a page displays information about a single focus term. 
 
@@ -119,7 +138,7 @@ Users come to VFB with limited information - perhaps a name or abberviation that
 
 <a name="autosuggestsearch"></a>
 
-## 3\. Autosuggest search
+## 4\. Autosuggest search
 
 This should be present on all pages.  It allows users to choose a focus term.  Once a focus term is chosen, term info for that term is displayed.
 
@@ -136,16 +155,19 @@ TBD: Should we also have a secondary results page allowing refinement, or just r
  
 <a name="terminformationandquerymenus"></a>
 
-## 4\. Term Information and query menus
+## 5\. Term Information and query menus
 
 Information about a term.  A term may be 
- - a class 
-   - (of cells, anatomy, genetic feature(?))
+ - a class of
+   - cell, 
+   - anatomical structure
+   - FlyBase genetic feature (?)
+   
  - an individual
    - anatomical structure
+   - neuron cluster (?)
 
 Once a focus term has been chosen, term information about that term should be displayed along with query menus relevant to the term.   Linked images illustrating the class or individual  should be shown wherever possible. Users do not necessarily know what types of information are available as a result of inference/queries, so, as well as directly linked information, term info should include some simple inferences and visualisations.
-
 
 __Asserted information__
 
@@ -156,10 +178,9 @@ __Asserted information__
 * synonyms
 * relationships  (objects hyperlinked)
 
-
 __visualisations (graphs)__
 
-All graphs should be clickable, and answer a specific question:
+Graphs should be displayed in tabs using labelling as below. All graphs should be clickable, and answer a specific question:
 
 In tabs:
    - What is it? 
@@ -173,26 +194,51 @@ In tabs:
 
 __subclasses and parts__
 
-Multiple tabs (below other term info?)
+Subclasses and parts of anatomical structures should be displayed in tabs, rather than users needing to query for them.
 
-To decide: Lists or trees?
-Lists have the advantage that tables can show more information about terms than trees.  They could even be identical to anatomy search results pages.
-Trees have the advantage of providing a bit more context.  May have to combine parts and subclasses to generate useful trees.
+TBD: Lists or trees?
+* Lists have the advantage that tables can show more information about terms than trees and can potentially be sorted o refined.  They could even be identical to anatomy search results pages.
+* Trees are harder to generate, but have the advantage of providing a bit more context.  They are also better suited to browsing.  May have to combine parts and subclasses to generate useful trees.
 
 
 <a name="querying"></a>
 
-## 5\. Querying
+## 6\. Querying
 
-Once users have a relevant focus term, queries allow them to find relevant, biologically related information.
+Once users have a relevant focus term, queries allow them to find relevant, biologically related information. 
 
-DETAILS TBA
+For reference: [VFB1 queries](https://github.com/VirtualFlyBrain/VFB/wiki/Queries)
 
-Roughly as now for anatomy, but add references and move subclasses and parts to precomputed tabs.
+* Queries from all anatomical classes
+ * genes expressed in X
+ * transgenes expressed in X
+ * phenotypes in X
+
+* Queries from neuropils
+ * neurons with some part in X
+  * neurons with synaptic terminals in X
+   * neurons with presynaptic terminals in X
+   * neurons with postsynaptic terminals in X
+
+* Queries from tracts/nerves
+   * fasciculates with X
+
+* Queries from lineage clones
+  * Component neuron  
+
+* Queries from clusters
+   TBD: Do we want cluster page
+
+* Queries from Genetic Features
+   * Anatomical structures expressed in (or should this just be displayed?)
+     * Neurons expressed in? 
+   * Associated neural phenotypes (or just display?)
+
+
 
 <a name="imagebrowser"></a>
 
-## 6\. Image browser
+## 7\. Image browser
 
 Would ideally consist of a single viewer providing a 3D context view as the main window with sub-windows overlaid providing metadata as well as an integrated slice viewer.
 
@@ -205,7 +251,7 @@ The sub-windows will consist of a large data display window (most likely at the 
 
 <a name="3dmainwindow"></a>
 
-### 6.1\. 3D main window
+### 7.1\. 3D main window
 
 The main 3D view should provide a surface 'glass' rendered background with selected objects viable inside:
 * multiple (unlimited within reason) items must be able to be overlayed.
@@ -217,7 +263,7 @@ Within the 3D view a virtual frame will indicate the current slice being shown i
 
 <a name="interaction"></a>
 
-### 6.2\. Interaction
+### 7.2\. Interaction
 * Scene rotation using virtual trackball (around centre of current objects?)
 * Zoom (using mouse wheel)
 * Ideally panning (using some key+drag combo)
@@ -227,7 +273,7 @@ Within the 3D view a virtual frame will indicate the current slice being shown i
 
 <a name="pointofinterest"></a>
 
-### 6.3\. Point of interest
+### 7.3\. Point of interest
 
 There will be a rendered marker indicating the current selected point - this is also the XYZ central point for navigation purposes. 
 
@@ -237,7 +283,7 @@ The point of interest should be manually selectable on either the 3D of 2D views
 
 <a name="selectedarea/point"></a>
 
-#### 6.3.1\. Selected area/point
+#### 7.3.1\. Selected area/point
 a separate sub-window will show all data available for the selected point of interest this will consist of:
 * any anatomy at this position,
 * any expression pattern / neuron individuals with thresholded expression at this point.
@@ -247,7 +293,7 @@ Discussion: The point of interest could be a single voxel, a voxel with a fixed 
 
 <a name="2dsliceviewer"></a>
 
-### 6.4\. 2D Slice viewer
+### 7.4\. 2D Slice viewer
 
 This will be a sub-window which can be varied in size control of which is provided by the main windows (3D viewers) controls.
 The only control in this window will be a vertical distance slider should be provided at one side to allow the user to scroll in depth without adjusting the point of interest. 
@@ -259,7 +305,7 @@ Discussion:  I suggest limiting to fixed plane views (frontal/sagittal/transvers
   
 <a name="anatomytree"></a>
 
-### 6.5\. Anatomy tree
+### 7.5\. Anatomy tree
 
 Allow multiple inheritance - reflecting the structure of the underlying ontology.
 display is\_a and part\_of relationships only
@@ -274,7 +320,7 @@ Discussion: Do we have a standard anatomy tree covering all anatomy or just that
 
 <a name="currentlydisplayed"></a>
 
-### 6.6\. Currently Displayed 
+### 7.6\. Currently Displayed 
 
 Shows all currently displayed items. This will consist of colour key with titles including:
 * template, 
@@ -298,7 +344,7 @@ Discussion: should we handle selection as separate from displayed and have separ
 
 <a name="sociallayer"></a>
 
-## 7\. Social layer
+## 8\. Social layer
 
 ALL CONTENT SHOULD BE SHAREABLE 
 
@@ -306,6 +352,8 @@ ALL CONTENT SHOULD BE SHAREABLE
 - If URL does not change during browsing, Provide permalinks.
 
 Discussion: Vote and comment on content. How can we handle this and what do we want it to acheve?
+
+Discussion: Albert Cardona collected together a few potentially useful [resources ocrowd-sourcing](https://github.com/acardona/CATMAID/wiki/Crowd-sourcing).
 
 
 
