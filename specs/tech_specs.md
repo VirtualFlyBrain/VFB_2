@@ -36,10 +36,11 @@ __Limitations of OLS:__
 __Content to index for autocomplete__
 
 * Names, synonyms and IDs for anatomical classes
-* Names, synonyms and IDs for anatomical individuals
-* Names, synonyms and IDs for genetic features in FlyBase that have either neuro-expression or neuro-phenotypes.
+* Names, synonyms and IDs for anatomical individuals (& clusters?)
+* Names, synonyms and IDs for genetic features in FlyBase that have either neuro-expression or neuro-phenotypes (May be represented as OWL classes)
 * Behavioural phenotypes ontology terms (?)
 * ? Chemicals (based on DoOR mapping of oderants) ?
+* Gene Ontology terms for neural function/behaviour ?
 
 __Autosuggest results feedback__
 
