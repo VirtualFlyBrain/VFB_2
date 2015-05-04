@@ -109,10 +109,14 @@ TBD: Should we also have a secondary results page allowing refinement, or just r
 ## Term Information and query menus
 
 Information about a term.  A term may be 
- - a class 
-   - (of cells, anatomy, genetic feature(?))
+ - a class of
+   - cell, 
+   - anatomical structure
+   - FlyBase genetic feature (?)
+   
  - an individual
    - anatomical structure
+   - neuron cluster (?)
 
 Once a focus term has been chosen, term information about that term should be displayed along with query menus relevant to the term.   Linked images illustrating the class or individual  should be shown wherever possible. Users do not necessarily know what types of information are available as a result of inference/queries, so, as well as directly linked information, term info should include some simple inferences and visualisations.
 
@@ -152,6 +156,8 @@ TBD: Lists or trees?
 
 Once users have a relevant focus term, queries allow them to find relevant, biologically related information. 
 
+For reference: [VFB1 queries](https://github.com/VirtualFlyBrain/VFB/wiki/Queries)
+
 * Queries from all anatomical classes
  * genes expressed in X
  * transgenes expressed in X
@@ -172,11 +178,12 @@ Once users have a relevant focus term, queries allow them to find relevant, biol
 * Queries from clusters
    TBD: Do we want cluster page
 
-https://github.com/VirtualFlyBrain/VFB/wiki/Queries
+* Queries from Genetic Features
+   * Anatomical structures expressed in (or should this just be displayed?)
+     * Neurons expressed in? 
+   * Associated neural phenotypes (or just display?)
 
-DETAILS TBA
 
-Roughly as now for anatomy, but add references and move subclasses and parts to precomputed tabs.
 
 ## Image browser
 
