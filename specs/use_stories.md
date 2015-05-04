@@ -12,6 +12,20 @@ and high quality datasets allow VFB to serve and accurate lists of candidates.  
 
 
 Some characters:
-Sarah, a regular fly biologist with little neuro background whose favourite gene, ketchup has an allele with a behavioral/neuroanatomical phenotype, she wants to find.
 
-Ayako: A postdoc trying to dissect the circuitry underlying a newly discovered ocellar sensory pathways. She wants to find new candidate neurons in the circuit and to find transgenes to drive expression candidate neurons and other neurons in the circuit.
+Sarah: a regular fly biologist with little neuro background whose favourite gene, ketchup has an allele with a behavioral and neuroanatomical phenotypes, she wants to find:
+    Other genes whose alleles have similar phenotypes
+    
+
+
+
+Ayako: A postdoc trying to dissect the circuitry underlying a newly discovered ocellar sensory pathways. She wants to find new candidate neurons in the circuit and to find transgenes to drive expression in these and other neurons in the circuit.  The story has to outline:
+      (a) How she will find records for known neurons in this pathway?
+          Query by name
+          Query by function?
+      (b) How she will find known and potential drivers for these neurons?
+      (c) How she will find potential circuit partners
+
+Giorgio: A Drosophila neurobiologist who is reasonably experienced at image manipulation.  He has lots of images of single neurons that he want to use to query by image to: 
+     (a) Find out if they map to known neurons
+     (b) Find known and potential drivers
