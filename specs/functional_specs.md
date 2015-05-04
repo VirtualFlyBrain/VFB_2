@@ -13,14 +13,14 @@ This document is intended as a description of how the site functions and of (rou
 
 Present on all pages.  Includes:
 
-* Logo & link to home - Top left = l
+* Logo & link to home - Top left
 * Name of current focus term.
-* Search box.  Typically this would live on the top right, but this may not => enough space for autocomplete search.
+* Search box.  Typically this would live on the top right, but this may not => enough space for autocomplete search.  Try in centre?
 * Contact, About and Help links
 
 ### Thumbnails
 
-Thumbnails will appear in many places on the site.  Where they do, they must follow a consistent grammar.  i.e. the following should be arranged in the same way wherever they are found:
+Thumbnails will appear in many places on the site.  Where they do, they __must__ follow a consistent grammar.  i.e. the following should be arranged in the same way wherever they are found:
 
 * Name
 * Link to source (use general one if no link specific to data is available)
@@ -45,7 +45,7 @@ TBD:
 
 ### Standard content page
 
-Standard content pages will not be fixed length - they will be long enough for the content that needs to be displayed.
+Standard content pages _will not be fixed length_ - they will be long enough for the content that needs to be displayed.
 
 Components:
 
