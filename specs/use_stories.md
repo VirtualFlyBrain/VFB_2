@@ -42,6 +42,35 @@ Giorgio is a Drosophila neurobiologist who is reasonably experienced at image ma
 He follows Greg Jefferis' handy YouTube guide [how did he find this?] to register neurons and generate tracing, which he then uploads to the 'search by image' tool.  This returns ranked lists of blast hits to: clusters(?), single neurons, expression patterns, neural lineage clones [will targets be chosen before query?].  All hits include a link or reference indicating their origin. The hits for single neurons and clusters include mappings to known classes (where there is data). Giorgio clicks on a few links and detailed information about each image and a 3D view of the chosen image in the browser.  He notices a shopping basket icon next to each image and finds he can use this to load up images to view together on the browser, or to bulk download content.  He remembers that his blast results page also had a column with a shopping basket in the header, and uses this to select some more items for the basket.
 
 Giorgio then launches the 3D image browser, which he uses to compare location of hits for drivers, neurons and lineage clones with his own uploaded tracing. While using the browser, he toggles components of the image on and off, and browses descriptions and classifications.
+
+Marta
+Looking for a line that expresses in a specific neuron type (to see in viewer), and other alternative lines, what data are there on these neurons.
+
+Unable to search for VT27938-GAL4, which I know labels AMMC-B1a neurons
+
+Alternatively, searched for AMMC-B1a neuron from homepage. 
+Three tabs on top, but both ‘Subclasses’ and ‘Parts of’ have no results. Could these be greyed out if there are no results? Wasted time clicking.
+
+Search term is now shown on header, almost on top of other things: doesn’t look good. I’d expect the term that I searched with to be shown on the same panel, “search for anatomy…”) where I’m looking at.
+No images are shown, so I choose the parent class: AMMC-B1 neuron
+99 results (header sentence now pushes out of frame.)
+Create composite view with 3 of them: AMMc in green, can’t change colour. 1 neurons also in green. Can’t change props of anatomy either, to make it more transparent.
+Top right Help link doesn’t work.
+
+I’d like to be able to see more info about the hits: what cluster they’re in? To see if there might be more than one subtype, see more than 3 neurons at a time in the viewer,see all of the neurons from a cluster at one time. 
+Essentially: I’d like each neuron to have a tick box so that it could be selected either to see in viewer, or download the csv with info or download the registered images.
+These are options that should be extended to other query lists.
+(Implicit: able to sort table)
+
+If I want to find other similar neurons to a particular one. Show a link to NBLAST on the fly. 
+If I choose a neuron to NBLAST (Cha-F-400160): Each of the top 10 hits has a link to see the neuron in VFB, but I’d like to be able to ‘import the 10 hits’ and look at them at the same time. 
+This would be related to allowing searching by image name (or FC neuron). there should be a general way to look at a group of neurons, by uplaoding a list of names, for example.
+
+Can’t really go any further through here, as I don’t have access to cluster pages.
+So go back, click on AMMC zone B and images of neurons clustered by shape.
+In the 3 clusters, some neurons are of the right type, others not, but again there is no way to select the neurons in one go.
+
+I’d like to be able to search by reference: I know of a paper that defines a few cell types, and want to find them quickly.
      
 
      
