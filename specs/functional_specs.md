@@ -18,6 +18,7 @@ Present on all pages.  Includes:
 * Search box.  Typically this would live on the top right, but this
 may not => enough space for autocomplete search. Try in centre?
 * Contact, About and Help links
+* Menus - [Note most content in current menus can probably be stripped out]
 
 ### Thumbnails
 
