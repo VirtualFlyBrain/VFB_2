@@ -47,9 +47,7 @@ __Marta__
 
 Looking for a line that expresses in a specific neuron type (to see in viewer), and other alternative lines, what data are there on these neurons.
 
-Unable to search for VT27938-GAL4, which I know labels AMMC-B1a neurons
-
-Alternatively, searched for AMMC-B1a neuron from homepage. 
+Unable to search for VT27938-GAL4, which I know labels AMMC-B1a neurons. Alternatively, searched for AMMC-B1a neuron from homepage. 
 Three tabs on top, but both ‘Subclasses’ and ‘Parts of’ have no results. Could these be greyed out if there are no results? Wasted time clicking.
 
 Search term is now shown on header, almost on top of other things: doesn’t look good. I’d expect the term that I searched with to be shown on the same panel, “search for anatomy…”) where I’m looking at.
