@@ -25,6 +25,10 @@ __Encouraging casual use__
 
 People use FB at meetings all the time during talks to find genes/alleles.  Needs to be fast - problem for large volumes that are coming.
 
+__In context help__
+
+...
+
 __Sarah__
 
 Sarah is a doing a PhD in Drosophila genetics.  She has little neuro background, but has isolated new alleles of a gene, *ketchup*, which has known alleles with behavioral and neuroanatomical phenotypes:  flies exhibit defects in the recently discovered regurgitation pathway, and have defects in the noduli and associated neurons.  Sarah wants to find other genes whose alleles have similar phenotypes.  She also wants to find images to help her interpret her own image data.  
