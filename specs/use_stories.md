@@ -43,7 +43,8 @@ He follows Greg Jefferis' handy YouTube guide [how did he find this?] to registe
 
 Giorgio then launches the 3D image browser, which he uses to compare location of hits for drivers, neurons and lineage clones with his own uploaded tracing. While using the browser, he toggles components of the image on and off, and browses descriptions and classifications.
 
-Marta
+__Marta__
+
 Looking for a line that expresses in a specific neuron type (to see in viewer), and other alternative lines, what data are there on these neurons.
 
 Unable to search for VT27938-GAL4, which I know labels AMMC-B1a neurons
