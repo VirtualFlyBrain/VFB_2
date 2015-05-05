@@ -9,9 +9,15 @@ Users are typically busy, wet-lab biologists who want to be able to rapidly find
   
 They need to be able to sift rapidly through large volumes of information in order to find these.  VFB aims to automate this sifting process as far as possible. Well defined semantics and high quality datasets allow VFB to serve and accurate lists of candidates.  Users then need information and tools to refine these often long lists and to assess the quality of their results. Once users have identified candidate 3D registered images or lists of results,  they need the option to download these in order to be able to use desktop tools for analysis.
 
-TBA: Use cases for users coming from Google & FlyBase*.
+__Notes on entry points__
+
+TBA: Use cases for users coming from Google & FlyBase*
 
 Notes on links from FlyBase: linkout for images from expression.  Also link from PubMed.  Also think through other linkout mechanisms from FlyBase, but this will require more pages e.g. for contructs, alleles, genes.  Links from first FB hit page to images?
+
+Add entry points by functional system.  We already have the semantics to hook all this together: neurons, phenotypes, GO annotations.  These could use labeled system schematics.
+
+
 
 
 __Sarah__
