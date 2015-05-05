@@ -17,7 +17,9 @@ Notes on links from FlyBase: linkout for images from expression.  Also link from
 
 Add entry points by functional system.  We already have the semantics to hook all this together: neurons, phenotypes, GO annotations.  These could use labeled system schematics.
 
+__Use stories from community forum ?__
 
+Use Google groups or add new forum.
 
 
 __Sarah__
