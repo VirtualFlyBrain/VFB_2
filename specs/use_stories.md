@@ -21,6 +21,9 @@ __Use stories from community forum ?__
 
 Use Google groups or add new forum.
 
+__Encouraging casual use__
+
+People use FB at meetings all the time during talks to find genes/alleles.  Needs to be fast - problem for large volumes that are coming.
 
 __Sarah__
 
@@ -49,7 +52,7 @@ Giorgio is a Drosophila neurobiologist who is reasonably experienced at image ma
 
 He follows Greg Jefferis' handy YouTube guide [how did he find this?] to register neurons and generate tracing, which he then uploads to the 'search by image' tool.  This returns ranked lists of blast hits to: clusters(?), single neurons, expression patterns, neural lineage clones [will targets be chosen before query?].  All hits include a link or reference indicating their origin. The hits for single neurons and clusters include mappings to known classes (where there is data). Giorgio clicks on a few links and detailed information about each image and a 3D view of the chosen image in the browser.  He notices a shopping basket icon next to each image and finds he can use this to load up images to view together on the browser, or to bulk download content.  He remembers that his blast results page also had a column with a shopping basket in the header, and uses this to select some more items for the basket.
 
-Giorgio then launches the 3D image browser, which he uses to compare location of hits for drivers, neurons and lineage clones with his own uploaded tracing. While using the browser, he toggles components of the image on and off, and browses descriptions and classifications.
+Giorgio then launches the 3D image browser, which he uses to compare location of drivers, neurons and lineage clones with his own uploaded tracing. While using the browser, he toggles components of the image on and off, and browses descriptions and classifications.
 
 __Marta__
 
