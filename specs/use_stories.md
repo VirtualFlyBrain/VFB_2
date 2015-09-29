@@ -9,18 +9,6 @@ Users are typically busy, wet-lab biologists who want to be able to rapidly find
   
 They need to be able to sift rapidly through large volumes of information in order to find these.  VFB aims to automate this sifting process as far as possible. Well defined semantics and high quality datasets allow VFB to serve and accurate lists of candidates.  Users then need information and tools to refine these often long lists and to assess the quality of their results. Once users have identified candidate 3D registered images or lists of results,  they need the option to download these in order to be able to use desktop tools for analysis.
 
-__Notes on entry points__
-
-TBA: Use cases for users coming from Google & FlyBase*
-
-Notes on links from FlyBase: linkout for images from expression.  Also link from PubMed.  Also think through other linkout mechanisms from FlyBase, but this will require more pages e.g. for contructs, alleles, genes.  Links from first FB hit page to images?
-
-Add entry points by functional system.  We already have the semantics to hook all this together: neurons, phenotypes, GO annotations.  These could use labeled system schematics.
-
-__Use stories from community forum ?__
-
-Use Google groups or add new forum.
-
 __Encouraging casual use__
 
 People use FB at meetings all the time during talks to find genes/alleles.  Needs to be fast - problem for large volumes that are coming.
@@ -28,6 +16,24 @@ People use FB at meetings all the time during talks to find genes/alleles.  Need
 __In context help__
 
 ...
+
+### Notes on entry points
+
+TBA: Use cases for users coming from Google & FlyBase*
+
+Notes on links from FlyBase: linkout for images from expression.  Also link from PubMed.  Also think through other linkout mechanisms from FlyBase, but this will require more pages e.g. for contructs, alleles, genes.  Links from first FB hit page to images?
+
+Add entry points by functional system.  We already have the semantics to hook all this together: neurons, phenotypes, GO annotations.  These could use labeled system schematics.
+
+__POssible sources of users storiesUse stories from community forum ?__
+
+Use Google groups or add new forum.
+
+
+
+
+
+### Plausible fictional use cases
 
 __Sarah__
 
@@ -58,7 +64,8 @@ He follows Greg Jefferis' handy YouTube guide [how did he find this?] to registe
 
 Giorgio then launches the 3D image browser, which he uses to compare location of drivers, neurons and lineage clones with his own uploaded tracing. While using the browser, he toggles components of the image on and off, and browses descriptions and classifications.
 
-__Marta__
+### Use case-based critique of VFB 1
+by _Marta Costa_
 
 Looking for a line that expresses in a specific neuron type (to see in viewer), and other alternative lines, what data are there on these neurons.
 
@@ -85,6 +92,19 @@ So go back, click on AMMC zone B and images of neurons clustered by shape.
 In the 3 clusters, some neurons are of the right type, others not, but again there is no way to select the neurons in one go.
 
 I’d like to be able to search by reference: I know of a paper that defines a few cell types, and want to find them quickly.
+
+__Comments__
+
+Lots of useful information and ideas in here to be mined
+
+Functionality TBA:
+
+1. Search by transgene name
+1. Grey out queries with no results (or give some indication of number of hits before running)
+1. Integrate links to NBLAST-on-the-fly
+1. Sorting of results tables (fixed in VFB 1.5)
+1. Link individual neurons to clusters (Need pages for clusters first).
+2. Improve display of multiple images in image browser and control over what is displayed  (largely or completely fixed in VFB1.5)
      
 
      
