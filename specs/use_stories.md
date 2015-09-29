@@ -49,17 +49,26 @@ __Ayako__
 Ayako is a postdoc neurobiologist dissecting a circuit involved in ocellar sensory pathways. She has used available GAL4 drivers and live calcium imaging to measure the activity of component neurons following direct stimulation of the ocelli and following activation of occellar sensory neurons using TRPA. She wants to find more candidate neurons in the circuit and to find drivers to more precisely target both these neurons and known component.
 
 - Aim - find out what is known about named neuron:
-   -  She searches using the name of a neuron, finds a description, some references, a list of neuropils innovated and a set of images {this is a best case scenario, need to map more single neuron images}
+   -  She searches using the name of a neuron, finds a description, some references, a list of neuropils innovated and a set of images {this is a best case scenario, need to map more single neuron images}.  She adds the neurons to the basket of images to view on the browser.
       - Aim - find new drivers for this neuron.
     	   - From the neuron term info, she directly searches for transgenes expressed in this neuron, but list only includes the set she is familiar with.
-	       - From the neuron term info, she searches for transgenes known to be expressed in the innervated neuropils. {But would she think to do this?}
-	       - Using the images found, she uses search by image (via N-Blast) to search for candidate transgenes that express in this neuron
-      - Aim - find potential circuit partners for this neuron
-         - Query for neurons with synaptic terminals in same neuropils - may turn up potential circuit partners  {Already doable, but would she think to?}
-         - Query for images of neurons in same each of these neuropils - may turn up potential circuit partners  {Already doable, but would she think to?}
+	   - From the neuron term info, she searches for transgenes known to be expressed in the innervated neuropils*.  She selects some images from these to display on the browser.
+	   - Using the images of the neuron, she uses search by image (via N-Blast) to search for candidate transgenes that express in this neuron { Not yet implemented }. She selects some of these to display on the browsers, along with images of the neuron.
+	   - Having found some candidates, she views these on the image browser in combination with the single neuron images in order to assess whether they are likely to drive expression in this neuron type.
+      - Aim - find potential circuit partners for this neuron. After each step, candidates are selected for viewing on image browser.
+         - Query for neurons with synaptic terminals in same neuropils - may turn up potential circuit partners*. 
+         - Query for images of neurons in each of these neuropils - may turn up potential circuit partners*.
          - Using image
-              - Nblast for similar neurons { Loooking outside the cluster => partial simialrity, may find circuit partners of branches in the circuit }
+              - Nblast for similar neuron (Loooking outside the cluster => partial simialrity, may find circuit partners of branches in the circuit)*
               - Search by image for potential curcuit partners based on arbor { Functionality not yet implemented }
+         - Having found some candidates, she views these in combination with the original neurons on the iamge browser to assess whether they really are likely circuit partners.
+         - Having identified likely circuit partners, she uses search by image to find potential drivers.
+
+ * Would she really think to try this strategy?
+
+_Critique:_
+
+The story involves search strategies that users are probably unlikely to think of - e.g. the queries of neuropils.  Could we provide shortcuts to these?  e.g. If neuron overlaps or innervates synaptic neuropil subdomains - provide shortcut to queries for neurons/transgenes across all those subdomains?
 
 __Giorgio__
 
