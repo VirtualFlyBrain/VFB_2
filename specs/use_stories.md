@@ -4,8 +4,8 @@ STATUS: DRAFT
 
 Users are typically busy, wet-lab biologists who want to be able to rapidly find: 
   - reagents that drive expression in specific neurons, 
-  - papers about specific types of neurons,
-  - candidate neurons belonging to circuits of interest  
+  - known information and papers about specific types of neurons,
+  - candidate neurons belonging to circuits/functional systems of interest
   
 They need to be able to sift rapidly through large volumes of information in order to find these.  VFB aims to automate this sifting process as far as possible. Well defined semantics and high quality datasets allow VFB to serve and accurate lists of candidates.  Users then need information and tools to refine these often long lists and to assess the quality of their results. Once users have identified candidate 3D registered images or lists of results,  they need the option to download these in order to be able to use desktop tools for analysis.
 
@@ -23,14 +23,15 @@ TBA: Use cases for users coming from Google & FlyBase*
 
 Notes on links from FlyBase: linkout for images from expression.  Also link from PubMed.  Also think through other linkout mechanisms from FlyBase, but this will require more pages e.g. for contructs, alleles, genes.  Links from first FB hit page to images?
 
-Add entry points by functional system.  We already have the semantics to hook all this together: neurons, phenotypes, GO annotations.  These could use labeled system schematics.
+TBA:  entry points by functional system.  
+- We already have the semantics to hook elements of functional systems together: neurons, phenotypes, GO annotations.  
+- Labelled schematics could provide 
 
-__POssible sources of users storiesUse stories from community forum ?__
+__Possible external sources of users stories?__
 
-Use Google groups or add new forum.
-
-
-
+- Google groups 
+- Community forum (TBA)
+- Interviews during UX testing
 
 
 ### Plausible fictional use cases
@@ -41,18 +42,24 @@ Sarah is a doing a PhD in Drosophila genetics.  She has little neuro background,
 
 When she arrives at the site, she's not too sure how it works and so decides to type the gene name in the search box (wouldn't work in VFB1). The auto-suggest brings up a set of alleles and constructs and takes her to report pages for these, allowing her to browse details of the phenotypes. She finds she can click on any of the terms for anatomical structures or behavioral phenotypes to find reports of more alleles causing similar phenotypes.  She also tries a search for nodulus - taking her to a report page with image data, descriptions and referecens and allowing her to search for phenotypes and expression.
 
-Critique of story - a naive fly user would start by searching for a gene in FlyBase.
+__Critique of story__ - a naive fly user would start by searching for a gene in FlyBase.
 
 __Ayako__
 
-Ayako is postdoc neurobiologist, trying to dissect the circuitry underlying a newly discovered ocellar sensory pathways. She wants to find new candidate neurons in the circuit and to find transgenes to drive expression in these and other neurons in the circuit...
+Ayako is a postdoc neurobiologist dissecting a circuit involved in ocellar sensory pathways. She has used available GAL4 drivers and live calcium imaging to measure the activity of component neurons following direct stimulation of the ocelli and following activation of occellar sensory neurons using TRPA. She wants to find more candidate neurons in the circuit and to find drivers to more precisely target both these neurons and known component.
 
-[The story has to outline
-      (a) How she will find records for known neurons in this pathway?
-          Query by name
-          Query by function?
-      (b) How she will find known and potential drivers for these neurons?
-      (c) How she will find potential circuit partners]
+- Aim - find out what is known about named neuron:
+   -  She searches using the name of a neuron, finds a description, some references, a list of neuropils innovated and a set of images {this is a best case scenario, need to map more single neuron images}
+      - Aim - find new drivers for this neuron.
+    	   - From the neuron term info, she directly searches for transgenes expressed in this neuron, but list only includes the set she is familiar with.
+	       - From the neuron term info, she searches for transgenes known to be expressed in the innervated neuropils. {But would she think to do this?}
+	       - Using the images found, she uses search by image (via N-Blast) to search for candidate transgenes that express in this neuron
+      - Aim - find potential circuit partners for this neuron
+         - Query for neurons with synaptic terminals in same neuropils - may turn up potential circuit partners  {Already doable, but would she think to?}
+         - Query for images of neurons in same each of these neuropils - may turn up potential circuit partners  {Already doable, but would she think to?}
+         - Using image
+              - Nblast for similar neurons { Loooking outside the cluster => partial simialrity, may find circuit partners of branches in the circuit }
+              - Search by image for potential curcuit partners based on arbor { Functionality not yet implemented }
 
 __Giorgio__
 
