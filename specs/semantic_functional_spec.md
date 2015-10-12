@@ -9,6 +9,6 @@ A list of questions that should be answerable using the site. This should be phr
 1. Given a(n uploaded) neuron tracing, predict what drivers express in that neuron.
 1. Given a region of neuropil, find all neurons with that are kown or predicted to overlap the region or with synapses in that region, optionally specifying pre or post synaptic terminals.
 1. Given a neuron class, find all known phenotypes
-1. Given a sensory or other neuronal function, find all neurons and genes known or preducted to be capable of carrying out some part of that function.
+1. Given a sensory or other neuronal function, find all neurons and genes known or predicted to be capable of carrying out some part of that function.
 
 
