@@ -62,3 +62,13 @@ Crude Typing in label list.  Relationships as SuperClass and relationships Manch
     }
   ],
 ~~~~~~~~~
+
+Alternative query to pull relationships, superclasses directly, rather than relying on pre-rolled MS in attributes:
+
+~~~~~~~~~~.cql
+MATCH (q:Class { label :  'adult antennal lobe projection neuron DL1 adPN' } )-[r:SubClassOf|Related]->(sc:Class) return q, r, sc;
+~~~~~~~~~~
+
+Using resulting JSON requires parsing of graph output.  csv output is easier to process:
+
+Returns 3 columns (query, relation, superclass)  Each with JSON object for entity.
