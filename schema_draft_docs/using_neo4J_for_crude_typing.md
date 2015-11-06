@@ -11,6 +11,7 @@ In the query results:
 MATCH (n:Class { label :  'adult antennal lobe projection neuron DL1 adPN' } ) return n
 ~~~~~~~~~
 
+Crude Typing in label list.  Relationships as SuperClass and relationships Manchester Syntax under superClassDescription:
 
 ~~~~~~~~~.js
 
