@@ -4,22 +4,10 @@ STATUS: DRAFT
 
 Users are typically busy, wet-lab biologists who want to be able to rapidly find: 
   - reagents that drive expression in specific neurons, 
-  - papers about specific types of neurons,
-  - candidate neurons belonging to circuits of interest  
+  - known information and papers about specific types of neurons,
+  - candidate neurons belonging to circuits/functional systems of interest
   
 They need to be able to sift rapidly through large volumes of information in order to find these.  VFB aims to automate this sifting process as far as possible. Well defined semantics and high quality datasets allow VFB to serve and accurate lists of candidates.  Users then need information and tools to refine these often long lists and to assess the quality of their results. Once users have identified candidate 3D registered images or lists of results,  they need the option to download these in order to be able to use desktop tools for analysis.
-
-__Notes on entry points__
-
-TBA: Use cases for users coming from Google & FlyBase*
-
-Notes on links from FlyBase: linkout for images from expression.  Also link from PubMed.  Also think through other linkout mechanisms from FlyBase, but this will require more pages e.g. for contructs, alleles, genes.  Links from first FB hit page to images?
-
-Add entry points by functional system.  We already have the semantics to hook all this together: neurons, phenotypes, GO annotations.  These could use labeled system schematics.
-
-__Use stories from community forum ?__
-
-Use Google groups or add new forum.
 
 __Encouraging casual use__
 
@@ -29,24 +17,58 @@ __In context help__
 
 ...
 
+### Notes on entry points
+
+TBA: Use cases for users coming from Google & FlyBase*
+
+Notes on links from FlyBase: linkout for images from expression.  Also link from PubMed.  Also think through other linkout mechanisms from FlyBase, but this will require more pages e.g. for contructs, alleles, genes.  Links from first FB hit page to images?
+
+TBA:  entry points by functional system.  
+- We already have the semantics to hook elements of functional systems together: neurons, phenotypes, GO annotations.  
+- Labelled schematics could provide 
+
+__Possible external sources of users stories?__
+
+- Google groups 
+- Community forum (TBA)
+- Interviews during UX testing
+
+
+### Plausible fictional use cases
+
 __Sarah__
 
 Sarah is a doing a PhD in Drosophila genetics.  She has little neuro background, but has isolated new alleles of a gene, *ketchup*, which has known alleles with behavioral and neuroanatomical phenotypes:  flies exhibit defects in the recently discovered regurgitation pathway, and have defects in the noduli and associated neurons.  Sarah wants to find other genes whose alleles have similar phenotypes.  She also wants to find images to help her interpret her own image data.  
 
 When she arrives at the site, she's not too sure how it works and so decides to type the gene name in the search box (wouldn't work in VFB1). The auto-suggest brings up a set of alleles and constructs and takes her to report pages for these, allowing her to browse details of the phenotypes. She finds she can click on any of the terms for anatomical structures or behavioral phenotypes to find reports of more alleles causing similar phenotypes.  She also tries a search for nodulus - taking her to a report page with image data, descriptions and referecens and allowing her to search for phenotypes and expression.
 
-Critique of story - a naive fly user would start by searching for a gene in FlyBase.
+__Critique of story__ - a naive fly user would start by searching for a gene in FlyBase.
 
 __Ayako__
 
-Ayako is postdoc neurobiologist, trying to dissect the circuitry underlying a newly discovered ocellar sensory pathways. She wants to find new candidate neurons in the circuit and to find transgenes to drive expression in these and other neurons in the circuit...
+Ayako is a postdoc neurobiologist dissecting a circuit involved in ocellar sensory pathways. She has used available GAL4 drivers and live calcium imaging to measure the activity of component neurons following direct stimulation of the ocelli and following activation of occellar sensory neurons using TRPA. She wants to find more candidate neurons in the circuit and to find drivers to more precisely target both these neurons and known component.
 
-[The story has to outline
-      (a) How she will find records for known neurons in this pathway?
-          Query by name
-          Query by function?
-      (b) How she will find known and potential drivers for these neurons?
-      (c) How she will find potential circuit partners]
+- Aim - find out what is known about named neuron:
+   -  She searches using the name of a neuron, finds a description, some references, a list of neuropils innovated and a set of images {this is a best case scenario, need to map more single neuron images}.  She adds the neurons to the basket of images to view on the browser.
+      - Aim - find new drivers for this neuron.
+    	   - From the neuron term info, she directly searches for transgenes expressed in this neuron, but list only includes the set she is familiar with.
+	   - From the neuron term info, she searches for transgenes known to be expressed in the innervated neuropils*.  She selects some images from these to display on the browser.
+	   - Using the images of the neuron, she uses search by image (via N-Blast) to search for candidate transgenes that express in this neuron { Not yet implemented }. She selects some of these to display on the browsers, along with images of the neuron.
+	   - Having found some candidates, she views these on the image browser in combination with the single neuron images in order to assess whether they are likely to drive expression in this neuron type.
+      - Aim - find potential circuit partners for this neuron. After each step, candidates are selected for viewing on image browser.
+         - Query for neurons with synaptic terminals in same neuropils - may turn up potential circuit partners*. 
+         - Query for images of neurons in each of these neuropils - may turn up potential circuit partners*.
+         - Using image
+              - Nblast for similar neuron (Loooking outside the cluster => partial simialrity, may find circuit partners of branches in the circuit)*
+              - Search by image for potential curcuit partners based on arbor { Functionality not yet implemented }
+         - Having found some candidates, she views these in combination with the original neurons on the iamge browser to assess whether they really are likely circuit partners.
+         - Having identified likely circuit partners, she uses search by image to find potential drivers.
+
+ * Would she really think to try this strategy?
+
+_Critique:_
+
+The story involves search strategies that users are probably unlikely to think of - e.g. the queries of neuropils.  Could we provide shortcuts to these?  e.g. If neuron overlaps or innervates synaptic neuropil subdomains - provide shortcut to queries for neurons/transgenes across all those subdomains?
 
 __Giorgio__
 
@@ -58,7 +80,8 @@ He follows Greg Jefferis' handy YouTube guide [how did he find this?] to registe
 
 Giorgio then launches the 3D image browser, which he uses to compare location of drivers, neurons and lineage clones with his own uploaded tracing. While using the browser, he toggles components of the image on and off, and browses descriptions and classifications.
 
-__Marta__
+### Use case-based critique of VFB 1
+by _Marta Costa_
 
 Looking for a line that expresses in a specific neuron type (to see in viewer), and other alternative lines, what data are there on these neurons.
 
@@ -85,6 +108,19 @@ So go back, click on AMMC zone B and images of neurons clustered by shape.
 In the 3 clusters, some neurons are of the right type, others not, but again there is no way to select the neurons in one go.
 
 I’d like to be able to search by reference: I know of a paper that defines a few cell types, and want to find them quickly.
+
+__Comments__
+
+Lots of useful information and ideas in here to be mined
+
+Functionality TBA:
+
+1. Search by transgene name
+1. Grey out queries with no results (or give some indication of number of hits before running)
+1. Integrate links to NBLAST-on-the-fly
+1. Sorting of results tables (fixed in VFB 1.5)
+1. Link individual neurons to clusters (Need pages for clusters first).
+2. Improve display of multiple images in image browser and control over what is displayed  (largely or completely fixed in VFB1.5)
      
 
      
