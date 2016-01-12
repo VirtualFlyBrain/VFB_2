@@ -2,81 +2,84 @@
 # Dictionaries
 # Query types
 # Subqueries 
-	# Challenges:  How to specify compounds.
+   # Challenges:  
+      # How to specify compounds queries - output of one to input of another
+      # How to specify
+   
 
 
 Query_endpoints: 
-	OWL: 
-	cypher: 
-	solr:
-	Neuron_blast:
-	
+   OWL: 
+   cypher: 
+   solr:
+   Neuron_blast:
+   
 
 relations:
-	'part of' : BFO_
-	'overlaps' : RO_
-	'has synaptic terminal in' : RO_
-	'has presynaptic terminal in' : RO_
-	'has postsynaptic terminal in' : RO_
-	'fasciculates_with' : RO_
-	
+   'part of' : BFO_
+   'overlaps' : RO_
+   'has synaptic terminal in' : RO_
+   'has presynaptic terminal in' : RO_
+   'has postsynaptic terminal in' : RO_
+   'fasciculates_with' : RO_
+   
 
 classes:
-	'neuron' : FBbt_
-	
+   'neuron' : FBbt_
+   
 
 queries:
-	- 
-		query: ant_pre_q
-		description: "A query designed to find a list of anatomical structures overlapping "
-		subqueries: 
-			OWL: "'overlaps' some '%s'"
-			OWL: "'part_of' some '%s'"
-			# How to specify post-processing
-			# Output1: union (q1,q2)
-			# Output2: difference (q1/q2), used for standard caveat warning. 
-			# Experiment with precomputing in neo4J? Careful - this is closed world reasoning!
-				
-	- 
-		query: anatomical_class_summary
-		description: "Summary information on any given anatomy term, for use in results pages.
-		Includes: Name, Pub list, Images (top 5)"
-		subqueries: 
-			- cypher: ''
-			- 
-	- 
-		query: anatomy_term_full
-		description: "Full information on an anatomy term, for use in term info pages."
-		subqueries:
-			- cypher: ''
-		
-	- 
-		query: 'Expression'
-		query_text: ''
-		subqueries: 
-			- OWL: anat_pre_q
-			- cypher: ''
-			
-	- 
-		query: 'Phenotype'
-		query_text: ''
-		subqueries:
-			- OWL: owl_pre_q
-			- cypher: ''
+   - 
+      query: ant_pre_q
+      description: "A query designed to find a list of anatomical structures overlapping "
+      subqueries: 
+         OWL: "'overlaps' some '%s'"
+         OWL: "'part_of' some '%s'"
+         # How to specify post-processing
+         # Output1: union (q1,q2)
+         # Output2: difference (q1/q2), used for standard caveat warning. 
+         # Experiment with precomputing in neo4J? Careful - this is closed world reasoning!
+            
+   - 
+      query: anatomical_class_summary
+      description: "Summary information on any given anatomy term, for use in results pages.
+      Includes: Name, Pub list, Images (top 5)"
+      subqueries: 
+         - cypher: ''
+         - 
+   - 
+      query: anatomy_term_full
+      description: "Full information on an anatomy term, for use in term info pages."
+      subqueries:
+         - cypher: ''
+      
+   - 
+      query: 'Expression'
+      query_text: ''
+      subqueries: 
+         - OWL: anat_pre_q
+         - cypher: ''
+         
+   - 
+      query: 'Phenotype'
+      query_text: ''
+      subqueries:
+         - OWL: owl_pre_q
+         - cypher: ''
 
-	- 
-		query: 'neuron_overlaps'
-		query_text: ''
-		subqueries:
-			- OWL: "has_synaptic_terminal_in some '%s'"
-			
-		
-	- 
-		query: 'has_synaptic_terminal_in'
-		query_text: ''
-		subqueries:
-			- OWL: "has_synaptic_terminal_in some '%s'
-			
-		
-				
-			
+   - 
+      query: 'neuron_overlaps'
+      query_text: ''
+      subqueries:
+         - OWL: "has_synaptic_terminal_in some '%s'"
+         
+      
+   - 
+      query: 'has_synaptic_terminal_in'
+      query_text: ''
+      subqueries:
+         - OWL: "has_synaptic_terminal_in some '%s'
+         
+      
+            
+         
